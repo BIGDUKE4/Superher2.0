@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
 
-
+        //Initialiseres
         Superhero hero = new Superhero("Batman", "Strong", 1989, 1.89,true);
         Superhero hero1 = new Superhero("Batman", "Strong", 1989, 1.89,true);
         Superhero hero2 = new Superhero("Batman", "Strong", 1989, 1.89,true);
@@ -23,6 +23,7 @@ public class Main {
         System.out.println("Opret en Superhelt");
         String name;
         name = sc.next();
+
 
 
 
