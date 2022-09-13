@@ -18,11 +18,27 @@ public class Main {
         data1.addSuperheroes(hero3, 3);
         data1.addSuperheroes(hero4, 4);
 
+        String name;
+        String superpower;
+        int creationyear;
+        double height;
+        boolean humanor;
         System.out.println("Velkommen til Superhero Universet");
         Scanner sc = new Scanner(System.in);
         System.out.println("Opret en Superhelt");
-        String name;
+        System.out.println("Hvad hedder din superhelt?");
         name = sc.next();
+        System.out.println("Hvad er din superhelts superkræfter?");
+        superpower = sc.next();
+        System.out.println("Hvilket årstal blev din superhelt oprettet i?");
+        creationyear = sc.nextInt();
+        System.out.println("Hvor høj er din superhelt?");
+        height = sc.nextDouble();
+        System.out.println("Er din superhelt et menneske eller ikke?");
+        humanor = sc.hasNextBoolean();
+
+
+
 
 
 

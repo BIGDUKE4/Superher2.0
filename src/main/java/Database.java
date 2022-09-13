@@ -9,11 +9,8 @@ public class Database {
     }
 
 
-    //public String printlist() {
+    public String printlist() {
         String toReturn;
-        //for ()
-        // }
-
-
-    }
-//}
+        for (Superhero superhero: superheroes ) {
+            superhero.
+        }
