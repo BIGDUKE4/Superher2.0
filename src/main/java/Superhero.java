@@ -1,12 +1,12 @@
 public class Superhero {
-    private String Superheroname;
+    private String superHeroName;
     private String Superpower;
     private int Creationyear;
     private double height;
     private boolean HumanOrNot;
 
     public Superhero (String Superheroname, String Superpower, int Creationyear, double height, boolean HumanOrNot){
-        this.Superheroname = Superheroname;
+        this.superHeroName = Superheroname;
         this.Superpower = Superpower;
         this.Creationyear = Creationyear;
         this.height = height;
@@ -14,7 +14,7 @@ public class Superhero {
     }
 
     public String getSuperheroname() {
-        return Superheroname;
+        return superHeroName;
     }
 
     public String getSuperpower() {
@@ -34,7 +34,7 @@ public class Superhero {
     }
 
     public void setSuperheroname(String superheroname) {
-        Superheroname = superheroname;
+        superHeroName = superheroname;
     }
 
     public void setSuperpower(String superpower) {
