@@ -35,8 +35,8 @@ public class Main {
                 if (isHumanOrNotString.equalsIgnoreCase("Ja")) {
                 }
                 Database data = new Database();
-                Superhero superhero = new Superhero();
-                data.addHeroes();
+              //  Superhero superhero = new Superhero();
+               // data.addHeroes();
 
             } else {
                 System.exit(0);
