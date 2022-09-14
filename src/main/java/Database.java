@@ -15,4 +15,8 @@ public class Database {
     public void addHeroes(Superhero hero){
         superheroes.add(hero);
     }
+
+    public void searchForSuperHeroes (){
+
+    }
 }

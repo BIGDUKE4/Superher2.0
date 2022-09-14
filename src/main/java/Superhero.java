@@ -5,6 +5,7 @@ public class Superhero {
     private double height;
     private boolean HumanOrNot;
 
+    //Konstruktør
     public Superhero (String Superheroname, String Superpower, int Creationyear, double height, boolean HumanOrNot){
         this.superHeroName = Superheroname;
         this.Superpower = Superpower;
@@ -13,6 +14,7 @@ public class Superhero {
         this.HumanOrNot = HumanOrNot;
     }
 
+    //Get - metoder
     public String getSuperheroname() {
         return superHeroName;
     }
@@ -33,6 +35,7 @@ public class Superhero {
         return height;
     }
 
+    //Set metoder
     public void setSuperheroname(String superheroname) {
         superHeroName = superheroname;
     }
@@ -51,5 +54,10 @@ public class Superhero {
 
     public void setHumanOrNot(boolean humanOrNot) {
         HumanOrNot = humanOrNot;
+    }
+
+    @Override
+    public String toString() {
+        return super.toString();
     }
 }

@@ -34,9 +34,11 @@ public class Main {
                 boolean HumanYes = true;
                 if (isHumanOrNotString.equalsIgnoreCase("Ja")) {
                 }
-                Database data = new Database();
-              //  Superhero superhero = new Superhero();
-               // data.addHeroes();
+
+                //Objekter
+                Database data = new Database(); //Objekt
+              //Superhero superhero = new Superhero(); //Objekt
+              //data.addHeroes(); //Kalder på
 
             } else {
                 System.exit(0);
