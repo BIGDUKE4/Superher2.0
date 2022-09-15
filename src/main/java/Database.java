@@ -1,11 +1,6 @@
 import java.util.ArrayList;
 
 public class Database {
-   // private ArrayList<Superhero> superheroes;
-   // private ArrayList<Superhero> søgeresultat;
-
-
-
     //Arraylist til superhelte objekter
     private ArrayList<Superhero> superheroes = new ArrayList<>();
 
