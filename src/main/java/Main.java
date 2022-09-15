@@ -8,7 +8,7 @@ public class Main {
         m.db = new Database();
         Scanner sc = new Scanner(System.in);
 
-        Userinterface ui = new Userinterface();
+        //Userinterface ui = new Userinterface();
 
         Database data = new Database(); //Objekt
         //BrugerInput
@@ -44,7 +44,15 @@ public class Main {
             }else if (user == 2) {
                 data.printData();
             }else if (user == 3) {
-                System.out.println();
+                System.out.println("Søg efter din superhelt:");
+                String hero = sc.next();
+                Superhero herox = data.findSuperhero(hero); //Kalder på metoden fra Database klassen
+                if (herox == null){ //Hvis herox er lig med null så print:
+                    System.out.println("Ingen superhelte fundet");
+                }
+                if (herox != null){ //Hvis herox ikke er lig med null så print:
+                    System.out.println(herox);
+                }
             }
         } while (user != 9);
     }
