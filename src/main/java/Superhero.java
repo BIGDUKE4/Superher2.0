@@ -57,7 +57,7 @@ public class Superhero {
     }
 
    public String toString (){
-        return "Superhero Name" + superHeroName + "" + "Superpower" + Superpower + "" + "Creation Year" + Creationyear
-                + "" + "Height" + height + "" + "Human Or Not" + HumanOrNot;
+        return "Superhero Name" + superHeroName + " " + "Superpower" + Superpower + " " + "Creation Year" + Creationyear
+                + " " + "Height" + height + " " + "Human Or Not" + " " + HumanOrNot + " ";
     }
 }

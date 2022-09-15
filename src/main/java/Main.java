@@ -2,11 +2,6 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        String name;
-        String superpower;
-        int creationyea;
-        double heights;
-        boolean humanornot;
         int user;
         Scanner sc = new Scanner(System.in);
 
@@ -24,23 +19,25 @@ public class Main {
             user = sc.nextInt();
             if (user == 1) {
                 System.out.println("Hvad hedder din superhelt?");
-                name = sc.next();
+                String superHeroName = sc.next();
                 System.out.println("Hvad er din superhelts superkræfter?");
-                superpower = sc.next();
+                String Superpower = sc.next();
                 System.out.println("Hvilket årstal blev din superhelt oprettet i?");
-                creationyea = sc.nextInt();
+                int creationYear = sc.nextInt();
                 System.out.println("Hvor høj er din superhelt?");
-                heights = sc.nextDouble();
+                double height = sc.nextDouble();
                 System.out.println("Er din superhelt et menneske (Ja/Nej");
                 String isHumanOrNotString = sc.next();
-                boolean HumanNot = false;
-                boolean HumanYes = true;
+                boolean HumanOrNot = false;
                 if (isHumanOrNotString.equalsIgnoreCase("Ja")) {
+                    HumanOrNot = true;
                 }
 
-            }else if (user == 2){
-              data.printData();
-            } else if (user == 3) {
+                data.addHeroes1(superHeroName, Superpower, creationYear, height, HumanOrNot);
+
+            }else if (user == 2) {
+                data.printData();
+            }else if (user == 3) {
                 System.out.println();
             }
         } while (user != 9);
