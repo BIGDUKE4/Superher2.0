@@ -56,8 +56,8 @@ public class Superhero {
         HumanOrNot = humanOrNot;
     }
 
-    @Override
-    public String toString() {
-        return super.toString();
+   public String toString (){
+        return "Superhero Name" + superHeroName + "" + "Superpower" + Superpower + "" + "Creation Year" + Creationyear
+                + "" + "Height" + height + "" + "Human Or Not" + HumanOrNot;
     }
 }

@@ -10,11 +10,14 @@ public class Main {
         int user;
         Scanner sc = new Scanner(System.in);
 
+        Database data = new Database(); //Objekt
         //BrugerInput
         do {
             System.out.println("""
                     Velkommen til SUPER HERO UNIVERSE.
-                    1. Opret superhelt
+                    1. Opret Superhelt
+                    2. Tilgå Superhelt database
+                    3. Søg efter Superhelte 
                     9. Afslut
                     """);
 
@@ -35,13 +38,10 @@ public class Main {
                 if (isHumanOrNotString.equalsIgnoreCase("Ja")) {
                 }
 
-                //Objekter
-                Database data = new Database(); //Objekt
-              //Superhero superhero = new Superhero(); //Objekt
-              //data.addHeroes(); //Kalder på
-
-            } else {
-                System.exit(0);
+            }else if (user == 2){
+              data.printData();
+            } else if (user == 3) {
+                System.out.println();
             }
         } while (user != 9);
     }
