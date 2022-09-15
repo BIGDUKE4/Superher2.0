@@ -1,17 +1,17 @@
 public class Superhero {
     private String superHeroName;
-    private String Superpower;
-    private int Creationyear;
+    private String superpower;
+    private int creationyear;
     private double height;
-    private boolean HumanOrNot;
+    private boolean humanOrNot;
 
     //Konstruktør
-    public Superhero (String Superheroname, String Superpower, int Creationyear, double height, boolean HumanOrNot){
-        this.superHeroName = Superheroname;
-        this.Superpower = Superpower;
-        this.Creationyear = Creationyear;
+    public Superhero (String superheroname, String superpower, int creationyear, double height, boolean humanOrNot){
+        this.superHeroName = superheroname;
+        this.superpower = superpower;
+        this.creationyear = creationyear;
         this.height = height;
-        this.HumanOrNot = HumanOrNot;
+        this.humanOrNot = humanOrNot;
     }
 
     //Get - metoder
@@ -20,15 +20,15 @@ public class Superhero {
     }
 
     public String getSuperpower() {
-        return Superpower;
+        return superpower;
     }
 
     public int getCreationyear() {
-        return Creationyear;
+        return creationyear;
     }
 
     public boolean isHumanOrNot() {
-        return HumanOrNot;
+        return humanOrNot;
     }
 
     public double getHeight() {
@@ -41,11 +41,11 @@ public class Superhero {
     }
 
     public void setSuperpower(String superpower) {
-        Superpower = superpower;
+        superpower = superpower;
     }
 
     public void setCreationyear(int creationyear) {
-        Creationyear = creationyear;
+        creationyear = creationyear;
     }
 
     public void setHeight(double height) {
@@ -53,11 +53,11 @@ public class Superhero {
     }
 
     public void setHumanOrNot(boolean humanOrNot) {
-        HumanOrNot = humanOrNot;
+        humanOrNot = humanOrNot;
     }
 
    public String toString (){
-        return "Superhero Name" + superHeroName + " " + "Superpower" + Superpower + " " + "Creation Year" + Creationyear
-                + " " + "Height" + height + " " + "Human Or Not" + " " + HumanOrNot + " ";
+        return "SuperheroName:" + " " + superHeroName + ", " + "Superpower:" + " "+ superpower + ", " + "CreationYear:" + " " + creationyear
+                + ", " + "Height:" + " " + height + ", " + "HumanOrNot:" + " " + humanOrNot + ". ";
     }
 }

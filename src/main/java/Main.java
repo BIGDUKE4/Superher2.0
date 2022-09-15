@@ -1,9 +1,14 @@
 import java.util.Scanner;
 
 public class Main {
+    private Database db;
     public static void main(String[] args) {
         int user;
+        Main m = new Main();
+        m.db = new Database();
         Scanner sc = new Scanner(System.in);
+
+        Userinterface ui = new Userinterface();
 
         Database data = new Database(); //Objekt
         //BrugerInput
@@ -33,6 +38,7 @@ public class Main {
                     HumanOrNot = true;
                 }
 
+                //Kalder på metoden fra klassen "Database"
                 data.addHeroes1(superHeroName, Superpower, creationYear, height, HumanOrNot);
 
             }else if (user == 2) {
