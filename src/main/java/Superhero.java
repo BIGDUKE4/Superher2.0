@@ -27,7 +27,7 @@ public class Superhero {
         return creationyear;
     }
 
-    public boolean isHumanOrNot() {
+    public boolean getIsHumanOrNot() {
         return humanOrNot;
     }
 

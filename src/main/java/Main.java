@@ -8,6 +8,5 @@ public class Main {
 
       ui.startProgram(); //Kalder UI metoden
 
-        System.out.println();
     }
 }
