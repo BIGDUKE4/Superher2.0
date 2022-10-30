@@ -23,7 +23,6 @@ public class Userinterface {
                     """);
 
             user = readInteger();
-            //checkInteger(user);
 
 
             //Try catch exception
@@ -107,10 +106,7 @@ public class Userinterface {
             }
         } while (user != 9);
     }
-    // public int readInteger (){
-    // while (!Scanner.)
-    //   String string = sc.next();
-    // }
+
 
     //Kaster exception, hvis der bliver skrevet 10 i bruger inputtet fx.
     public void checkInteger(int user) {
