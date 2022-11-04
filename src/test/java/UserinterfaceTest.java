@@ -1,4 +1,4 @@
-import org.junit.jupiter.api.Disabled;
+import Superhero.Superhero;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;

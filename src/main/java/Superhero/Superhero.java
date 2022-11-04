@@ -1,3 +1,5 @@
+package Superhero;
+
 public class Superhero {
     private String superHeroName;
     private String superpower;
@@ -6,7 +8,7 @@ public class Superhero {
     private boolean humanOrNot;
 
     //Konstruktør
-    public Superhero (String superheroname, String superpower, int creationyear, double height, boolean humanOrNot){
+    public Superhero(String superheroname, String superpower, int creationyear, double height, boolean humanOrNot) {
         this.superHeroName = superheroname;
         this.superpower = superpower;
         this.creationyear = creationyear;
@@ -56,8 +58,8 @@ public class Superhero {
         humanOrNot = humanOrNot;
     }
 
-   public String toString (){
-        return "SuperheroName:" + " " + superHeroName + ", " + "Superpower:" + " "+ superpower + ", " + "CreationYear:" + " " + creationyear
+    public String toString() {
+        return "SuperheroName:" + " " + superHeroName + ", " + "Superpower:" + " " + superpower + ", " + "CreationYear:" + " " + creationyear
                 + ", " + "Height:" + " " + height + ", " + "HumanOrNot:" + " " + humanOrNot + ". ";
     }
 }

@@ -1,9 +1,13 @@
+package db;
+
 import java.util.ArrayList;
+
+import Superhero.Superhero;
 
 public class Database {
     //Arraylist til superhelte objekter
     private ArrayList<Superhero> superheroes = new ArrayList<>();
-    ArrayList<Superhero> søgeresultat = new ArrayList<>();
+    public ArrayList<Superhero> søgeresultat = new ArrayList<>();
 
     public ArrayList<Superhero> acessSuperheroes() {
         return superheroes;

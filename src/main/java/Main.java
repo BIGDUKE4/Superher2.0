@@ -1,10 +1,10 @@
-import java.util.Scanner;
+import ui.Userinterface;
 
 public class Main {
 
 
     public static void main(String[] args) {
-        Userinterface ui = new Userinterface(); //Userinterface initialiseret
+        Userinterface ui = new Userinterface(); //Ui.Userinterface initialiseret
       ui.startProgram(); //Kalder UI metoden
 
     }

@@ -1,5 +1,10 @@
-import java.util.ArrayList;
+package ui;
+
+import db.Database;
+
 import java.util.Scanner;
+
+import Superhero.Superhero;
 
 public class Userinterface {
     int user;
@@ -85,7 +90,7 @@ public class Userinterface {
                     editSuperhero.setHumanOrNot(Boolean.logicalOr(true, false));
 
 
-                //Kalder på metoden fra klassen "Database"
+                //Kalder på metoden fra klassen "db.Database"
                 data.addHeroes1(superHeroName, Superpower, creationYear, height, HumanOrNot);
 
             } else if (user == 2) {
@@ -93,7 +98,7 @@ public class Userinterface {
             } else if (user == 3) {
                 System.out.println("Søg efter din superhelt:");
                 String hero = sc.next();
-                Superhero herox = data.findSuperhero(hero); //Kalder på metoden fra Database klassen
+                Superhero herox = data.findSuperhero(hero); //Kalder på metoden fra db.Database klassen
                 if (herox == null) { //Hvis herox er lig med null så print:
                     System.out.println("Ingen superhelte fundet");
                 }
